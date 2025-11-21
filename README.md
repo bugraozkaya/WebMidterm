@@ -5,9 +5,6 @@ This project was developed for the **CNG-361 Web Programming Midterm Lab**. The 
 
 The project demonstrates semantic HTML usage, Bootstrap grid system implementation, and custom styling with SASS variables, nesting, and mixins.
 
-## 🚀 Live Demo
-**View the live project here:** 🔗 [BURAYA GITHUB PAGES LİNKİNİ YAPIŞTIR]  
-*(Example: https://kullaniciadiniz.github.io/repo-adiniz/)*
 
 ## 🛠️ Technologies Used
 * **HTML5** (Semantic structure)
@@ -34,14 +31,3 @@ The project demonstrates semantic HTML usage, Bootstrap grid system implementati
 * ✅ **Visual Design:** Implemented an "Atlassian-style" card design with background color boxes (`z-index` positioning).
 * ✅ **Images:** Fixed image dimensions using `object-fit: cover` to prevent distortion.
 * ✅ Added a footer with copyright information.
-
-## 👥 Team Members
-| Name | Student ID | Role |
-|------|------------|------|
-| [SENİN ADIN SOYADIN] | [ÖĞRENCİ NUMARAN] | Lead Developer |
-| [VARSA ARKADAŞININ ADI] | [ONUN NUMARASI] | Developer |
-
-## 📦 How to Run Locally
-1. Clone the repository:
-   ```bash
-   git clone [BURAYA REPO HTTPS LİNKİNİ YAPIŞTIR]
