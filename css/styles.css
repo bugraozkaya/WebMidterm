@@ -1,35 +1,24 @@
 @charset "UTF-8";
-/* --- COLORS --- */
-.bg-yellow {
-  background-color: #ffab00;
-}
-
-.bg-green {
-  background-color: #36b37e;
-}
-
-.bg-teal {
-  background-color: #00b8d9;
-}
-
+/* --- VARIABLES --- */
 /* --- STYLES --- */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  color: #253858;
   background-color: #fff;
+  color: #172B4D;
 }
 
-h1, h4 {
-  color: #253858;
-}
-
-/* Team Card Design */
-.team-card {
-  background: transparent;
+/* KART TASARIMI */
+.custom-team-card {
+  text-align: center;
   border: none;
+  background: transparent;
+  /* RESİM VE KUTU KAPSAYICISI (Çerçeve) */
+  /* HOVER EFEKTİ */
 }
-.team-card .image-wrapper {
-  position: relative; /* Kutuyu buna göre hizalayacağız */
+.custom-team-card .image-container {
+  position: relative; /* Çocukları buna göre hizala */
+  width: 280px; /* Kapsayıcı genişliği */
+  height: 340px; /* Kapsayıcı yüksekliği */
+  margin: 0 auto 20px auto; /* Ortala */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,52 +28,57 @@ h1, h4 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 320px;
+  /* ARKADAKİ RENKLİ KUTU */
+  /* ÖNDEKİ RESİM */
 }
-.team-card .image-wrapper .color-box {
+.custom-team-card .image-container .bg-box {
   position: absolute;
   bottom: 0;
-  left: 10%;
-  width: 80%;
-  height: 80%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); /* Tam ortaya */
+  width: 100%;
+  height: 80%; /* Resimden kısa */
   z-index: 1; /* Arkada */
-  border-radius: 3px;
+  border-radius: 4px;
+  /* Renkler */
 }
-.team-card .image-wrapper .bg-yellow {
-  background-color: #ffab00;
+.custom-team-card .image-container .bg-box.yellow {
+  background-color: #FFAB00;
 }
-.team-card .image-wrapper .bg-green {
-  background-color: #36b37e;
+.custom-team-card .image-container .bg-box.green {
+  background-color: #36B37E;
 }
-.team-card .image-wrapper .bg-teal {
-  background-color: #00b8d9;
+.custom-team-card .image-container .bg-box.teal {
+  background-color: #00B8D9;
 }
-.team-card .image-wrapper img {
+.custom-team-card .image-container img {
   position: relative;
   z-index: 2; /* Önde */
-  width: 70%;
+  width: 260px !important; /* SABİT GENİŞLİK */
+  height: 320px !important; /* SABİT YÜKSEKLİK */
+  -o-object-fit: cover !important;
+     object-fit: cover !important; /* Yamulmayı önle */
   border-radius: 4px;
-  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
-.team-card:hover img {
-  -webkit-transform: translateY(-10px) scale(1.05);
-          transform: translateY(-10px) scale(1.05);
+.custom-team-card:hover img {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
-.team-card p {
+.custom-team-card h4 {
+  margin-top: 15px;
+  font-weight: 700;
+  color: #172B4D;
+}
+.custom-team-card p {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #6B778C;
   letter-spacing: 0.5px;
-  margin-top: 0.5rem;
-}
-
-/* Navbar Ufak Ayar */
-.navbar {
-  background-color: white !important;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-.navbar .navbar-brand, .navbar .nav-link {
-  color: #253858 !important;
-}
-.navbar .btn-primary {
-  background-color: #0052cc;
 }/*# sourceMappingURL=styles.css.map */
