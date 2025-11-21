@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* --- COLORS --- */
+.bg-yellow {
+  background-color: #ffab00;
+}
+
+.bg-green {
+  background-color: #36b37e;
+}
+
+.bg-teal {
+  background-color: #00b8d9;
+}
+
+/* --- STYLES --- */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #253858;
+  background-color: #fff;
+}
+
+h1, h4 {
+  color: #253858;
+}
+
+/* Team Card Design */
+.team-card {
+  background: transparent;
+  border: none;
+}
+.team-card .image-wrapper {
+  position: relative; /* Kutuyu buna göre hizalayacağız */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 320px;
+}
+.team-card .image-wrapper .color-box {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  z-index: 1; /* Arkada */
+  border-radius: 3px;
+}
+.team-card .image-wrapper .bg-yellow {
+  background-color: #ffab00;
+}
+.team-card .image-wrapper .bg-green {
+  background-color: #36b37e;
+}
+.team-card .image-wrapper .bg-teal {
+  background-color: #00b8d9;
+}
+.team-card .image-wrapper img {
+  position: relative;
+  z-index: 2; /* Önde */
+  width: 70%;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.team-card:hover img {
+  -webkit-transform: translateY(-10px) scale(1.05);
+          transform: translateY(-10px) scale(1.05);
+}
+.team-card p {
+  letter-spacing: 0.5px;
+  margin-top: 0.5rem;
+}
+
+/* Navbar Ufak Ayar */
+.navbar {
+  background-color: white !important;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.navbar .navbar-brand, .navbar .nav-link {
+  color: #253858 !important;
+}
+.navbar .btn-primary {
+  background-color: #0052cc;
+}/*# sourceMappingURL=styles.css.map */
